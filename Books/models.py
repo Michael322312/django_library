@@ -8,5 +8,7 @@ class LibraryBook(models.Model):
     available = models.BooleanField()
 
     class Meta:
+        verbose_name = "Library Book"
+        verbose_name_plural = "Library Books"
         db_table = "library_books"
         ordering = ["author"]
